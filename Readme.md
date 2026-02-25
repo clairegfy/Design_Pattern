@@ -17,16 +17,18 @@ The demo includes:
 
 ## Project structure
 Design_Pattern/
-├── Channel.h / Channel.cpp
-├── MobileSubscriber.h / MobileSubscriber.cpp
-├── EmailSubscriber.h / EmailSubscriber.cpp
+├── Channel.h
+├── Channel.cpp
+├── MobileSubscriber.h
+├── MobileSubscriber.cpp
+├── EmailSubscriber.h
+├── EmailSubscriber.cpp
 ├── ISubject.h
 ├── IObserver.h
 ├── VideoEvent.h
 ├── main.cpp
-└── Makefile
-└── Readme.md
-
+├── Makefile
+└── README.md
 
 ---
 

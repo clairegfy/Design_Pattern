@@ -16,6 +16,7 @@ The demo includes:
 ---
 
 ## Project structure
+```
 Design_Pattern/
 ├── Channel.h
 ├── Channel.cpp
@@ -29,6 +30,7 @@ Design_Pattern/
 ├── main.cpp
 ├── Makefile
 └── README.md
+```
 
 ---
 
@@ -47,21 +49,21 @@ To clean object files and the executable:
 make clean
 ```
 
-How to run :
+## How to run
 ```bash
 ./observer_demo
 ```
 
-Expected output :
+## Expected output
+
 The exact formatting can vary slightly, but you should observe:
 
-    - Subscription of Mobile + Email
-    Publish #1 → both observers receive the notification
+- Subscription of Mobile + Email — Publish #1 → both observers receive the notification
+- Unsubscription of Email — Publish #2 → only Mobile receives the notification
 
-    - Unsubscription of Email
-    Publish #2 → only Mobile receives the notification
+### Example
 
-Example:
+```
 === Subscription ===
 [Subscribe] @alice subscribed
 [Subscribe] bob@mail.com subscribed
@@ -77,6 +79,7 @@ Example:
 === Publish #2 (LIVE) ===
 [Channel] DesignPatternTV published: "LIVE Q&A" (LIVE)
   [Mobile] @alice notified: DesignPatternTV -> LIVE Q&A
+```
 
 
 ## How the Observer pattern is implemented
